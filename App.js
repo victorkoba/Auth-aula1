@@ -16,6 +16,7 @@ import ListarImagem from "./src/screens/listagemImagem";
 import ListarVideo from "./src/screens/listagemVideo";
 import UploadImagem from "./src/screens/uploadImagem";
 import UploadVideo from "./src/screens/uploadVideo";
+import adicionarJogador from "./src/screens/adicionarJogador";
 
 const Stack = createNativeStackNavigator();
 
@@ -122,6 +123,14 @@ const App = () => {
           component={UploadVideo}
           options={{
             title: "Upload Vídeos",
+            headerShown: true,
+          }}
+        />
+        <Stack.Screen
+          name="adicionarJogador"
+          component={adicionarJogador}
+          options={{
+            title: "Adicionar Jogador",
             headerShown: true,
           }}
         />

@@ -105,6 +105,12 @@ const HomeBot = ({ navigation }) => {
             >
               <Text style={styles.botao}> Upload Vídeos </Text>
             </Pressable>
+            <Pressable 
+            style={styles.botaoPress}
+            onPress={() => navigation.navigate("adicionarJogador")}
+            >
+              <Text style={styles.botao}> Adicionar Jogador </Text>
+            </Pressable>
           </View>
         </View>
       </ScrollView>
